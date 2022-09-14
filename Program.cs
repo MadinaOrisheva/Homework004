@@ -3,7 +3,7 @@
 void Function(int a, int b) {
 int result = a;
    
- for (int curr = 1; curr<=b; result= result*a) {
+ for (int curr = 1; curr<b; result= result*a) {
  curr++;
  }
 
@@ -15,5 +15,9 @@ Console.WriteLine ($"Число {a} в степени {b} равно {result}");
  int x = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число: ");
 int y = Convert.ToInt32(Console.ReadLine());
-Function (x,y);
+
+if (y == 0) { 
+    Console.WriteLine("1");
+}
+else Function (x,y);
 
