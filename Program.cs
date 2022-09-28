@@ -46,3 +46,26 @@ string a = num.ToString();
 
 Sum(arr);
 */
+//Напишите программу, которая задаёт массив из произвольного элементов и выводит их на экран.
+//void FillArray (int[]newarray)
+
+int[] CreateRandomArray(int size){
+    int[] array = new int[size];
+    for (int i=0; i < size; i++){
+        array[i] = new Random().Next(0,11 );
+    }
+    return array;
+}
+
+void ShowArray(int[] array){
+    Console.Write("[ ");
+    for(int i=0; i<array.Length; i++){
+        Console.Write(array[i]+" ");
+    }
+    Console.Write("]");
+}
+
+ShowArray(CreateRandomArray(20));
+
+// Массив - это набор элементов одного типа, создающийся для совершения действий над однотипными данными
+// для упрощения ввода и вывода информации.:)
